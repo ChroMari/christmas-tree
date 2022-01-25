@@ -1,0 +1,82 @@
+.card-toy
+  color: #FFFFFF
+  font-size: 16px
+  line-height: 18px
+  width: calc(100% / 4 - 20px)
+  padding: 20px 10px
+  border-radius: 10px
+  border: 1px solid #278D9F
+  background-color: rgba(31, 112, 127, .3)
+  backdrop-filter: blur(6px)
+  cursor: pointer
+  position: relative
+  margin-bottom: 30px
+  transition: all .3s ease-in-out
+  @media (max-width: 1200px)
+    width: calc(100% / 3 - 20px)
+  @media (max-width: 900px)
+    width: calc(100% / 2 - 20px)
+
+.card-toy:hover
+  transform: scale(1.08)
+
+.card-toy__title
+  font-size: 18px
+  line-height: 20px
+  text-align: center
+  margin-bottom: 15px
+  transition: all .3s ease-in-out
+
+.card-toy:hover .card-toy__title
+  color: #24C5DB
+
+.card-toy__img
+  width: 90px
+  height: 112px
+  object-fit: contain
+
+.card-toy__row
+  display: flex
+  justify-content: space-evenly
+
+.card-toy__tag
+  position: absolute
+  top: 175px
+  width: 60px
+  height: 30px
+  background: #24C5DB
+  left: -8px
+
+  &::before
+    content: ''
+    border-bottom: 8px solid #14455b
+    border-left: 8px solid transparent
+    top: -8px
+    position: absolute
+
+  &::after
+    content: ''
+    position: absolute
+    border-top: 15px solid transparent
+    border-bottom: 15px solid transparent
+    border-left: 15px solid #24C5DB
+    right: -15px
+
+  &_active
+    background: #CBB77A
+
+    &:after
+      border-left-color: #CBB77A
+
+.card-toy__text
+  font-size: 14px
+  line-height: 16px
+  padding-bottom: 10px
+
+.card-toy__date
+  font-size: 15px
+  line-height: 18px
+  font-weight: 500
+  color: #24C5DB
+
+//1200 изменить на 3 игрушки

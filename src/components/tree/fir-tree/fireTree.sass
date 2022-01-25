@@ -1,0 +1,30 @@
+.tree__card
+  width: 90px
+  height: 95px
+  border-radius: 10px
+  background-color: rgba(255, 255, 255, .5)
+  position: relative
+  cursor: pointer
+  border: 2px solid transparent
+  transition: all .3s ease-in-out
+
+  &:hover
+    border-color: goldenrod
+
+  &_active
+    border-color: goldenrod
+
+.tree__card-img
+  width: 70px
+  height: 80px
+  position: absolute
+  top: 50%
+  left: 50%
+  transform: translate(-50%, -50%)
+
+.tree__title
+  margin-bottom: 25px
+  font-weight: 400
+  text-transform: uppercase
+  color: #fff
+  font-size: 18px

@@ -1,0 +1,52 @@
+.header
+  background-color: #192F2D
+  padding: 10px 0
+  font-size: 18px
+  line-height: 20px
+  color: #FFFFFF
+  position: relative
+  z-index: 5
+
+.header__wrapper
+  display: flex
+  align-items: center
+
+.header-link
+  text-decoration: none
+  color: #FFFFFF
+  transition: all .3s ease-in-out
+
+  &:hover
+    color: #278D9F
+
+  & + .header-link
+    margin-left: 25px
+
+  &.active
+    border-bottom: 1px solid #61dafb
+
+.link-content
+  margin: 0
+  padding-bottom: 10px
+
+.header__count-toys
+  margin-left: auto
+  width: 48px
+  height: 60px
+  background-image: url(../../assets/svg/ball-2.svg)
+  background-size: 48px 60px
+  background-position: left -8px
+  background-repeat: no-repeat
+  transition: .3s
+
+  & span
+    display: inline-block
+    min-width: 40px
+    height: 40px
+    margin-top: 10px
+    margin-left: 4px
+    border-radius: 50%
+    text-align: center
+    line-height: 40px
+    font-size: 20px
+    background-color: #278D9F

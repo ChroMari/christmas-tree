@@ -1,0 +1,29 @@
+.shape
+  display: flex
+  align-items: center
+  margin-bottom: 25px
+
+.shape__title
+  font-size: 16px
+  font-weight: 400
+  line-height: 18px
+  text-transform: uppercase
+  color: #FFFFFF
+  margin-right: 20px
+
+.shape__svg
+  margin-left: 5px
+
+  &:hover svg path
+    fill: #61dafb
+
+  svg
+    width: 35px
+    height: 35px
+    cursor: pointer
+
+    path
+      transition: all .3s ease-in-out
+
+.shape__svg_active svg path
+  fill: #CBB77A
